@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    
+}
+
+body, html{
+    background-color: #000000;
+}
+.cabecalho{
+    background: linear-gradient(180deg, #102347 0%, #181818 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 28px;
+    height: 220px;
+}
+
+.cabecalho-logo{
+    width: 235px;
+}
+
+.cabecalho-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cabecalho h1{
+    padding-top: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.cabecalho p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+.dsmeta-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dsmeta-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+    width: 100%;
+    max-width: 900px;
+}    
+
+.dsmeta-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #283142;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.dsmeta-titulo-vendas{
+    margin-left: 15px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+    color: #676FFF;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.dsmeta-card input{
+    width: 100%;
+    background: #1B2531;
+    border: 1px solid #384459;
+    border-radius: 5px;
+    max-width: 300px;
+    height: 46px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #9AAABE;
+    padding-left: 20px;
+    margin-bottom: 16px;
+}
+
+.dsmeta-tabela-vendas{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.dsmeta-tabela-vendas thead {
+    height: 55px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #E9E9E9;
+}
+
+.dsmeta-tabela-vendas tbody{
+    font-weight: 400;
+    font-size: 14px;
+    color: #cfcfcf;
+    text-align: center;
+}
+
+.dsmeta-tabela-vendas tbody tr{
+    height: 74px;
+    border-top  : 1px solid #5f6e82;
+}
+
+.dsmeta-tabela-vendas tbody tr:nth-child(odd){
+    background: #242C3B;
+}
+
+.dsmeta-tabela-vendas tbody tr:hover > td {
+    background-color: #384459;
+}
+.dsmeta-red-btn{
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 107, 114, 0.1);
+    border: 1px solid #FF6B72;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dsmeta-red-btn img{
+    width: 19px;
+}
+
+.dsmeta-red-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show576{
+    display: none;
+}
+
+.show992{
+    display: none;
+}
+
+@media(min-width:576px){
+    .show576{
+        display: table-cell;
+        
+    }
+    .dsmeta-card{
+        padding: 35px;
+    }
+
+    .dsmeta-tabela-vendas tbody tr{
+        height: 55px;
+        
+    }
+
+    .dsmeta-tabela-vendas tbody{
+        font-size: 18px;
+    }
+}
+
+@media(min-width:992px){
+    .show992{
+        display: table-cell;
+    } 
+}
